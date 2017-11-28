@@ -7,4 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Question.create(title: 'How do I make a new folder in terminal', content: 'Hi, I am new to coding and this is the frist time I am using the terminal, I wanted to know how I can make a folder while in terminal.')
+Question.create!(title: 'How do I make a new folder in terminal', content: 'Hi, I am new to coding and this is the frist time I am using the terminal, I wanted to know how I can make a folder while in terminal.')

@@ -1,0 +1,9 @@
+<%= form_for @answer do |f| %>
+  <div class="row">
+    <div class="large-6 columns">
+      <%= f.label :response %>
+      <%= f.text_field :response %>
+    </div>
+  </div>
+  <%= f.submit :class => 'button' %>
+<% end %>

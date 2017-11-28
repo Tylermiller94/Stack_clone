@@ -1,0 +1,9 @@
+<div class="middle-content-text">
+  <h1>Answers</h1>
+  <ul>
+    <% @answers.each do |answer| %>
+      <li><%= link_to answer.title, answer_path(answer) %></li>
+    <% end %>
+  </ul>
+  <hr>
+  <%= link_to "New answer", new_answer_path %>

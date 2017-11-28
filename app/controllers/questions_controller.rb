@@ -36,7 +36,6 @@ class QuestionsController < ApplicationController
     redirect_to questions_path
   end
 
-end
 
 private
   def question_params

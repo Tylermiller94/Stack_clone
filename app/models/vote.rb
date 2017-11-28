@@ -1,3 +1,3 @@
 class Vote < ActiveRecord
-  belongs_to :answers, polymorphic: true
+  belongs_to :votable, polymorphic: true
 end

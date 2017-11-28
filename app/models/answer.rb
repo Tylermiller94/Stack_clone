@@ -1,4 +1,4 @@
 class Answer < ActiveRecord
   belongs_to :questions
-  has_many :votes as :
+  has_many :votes as :votable
 end

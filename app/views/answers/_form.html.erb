@@ -1,4 +1,7 @@
-<%= form_for @answer do |f| %>
+<%= render "layouts/errors", :object => @answer %>
+
+
+<%= form_for [@question, @answer] do |f| %>
   <div class="row">
     <div class="large-6 columns">
       <%= f.label :response %>
@@ -6,5 +9,5 @@
       <%= f.text_field :response %>
     </div>
   </div>
-  <%= f.submit :class => 'button' %>
+  <%= f.submit class: "btn" %>
 <% end %>

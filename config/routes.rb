@@ -2,5 +2,7 @@ Rails.application.routes.draw do
   root :to => 'pages#home'
 
   devise_for :users
-  resources :questions, :answers
+  resources :questions do
+    resources :answers
+  end
 end
